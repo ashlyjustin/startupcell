@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="logo-final.png">
+    <title>Startup Cell</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+      
+  
+    <!-- Include Font Awesome Stylesheet in Header -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+      
+
+          <!--mobile optimization-->
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+      
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+       
+
+    <style>
+
+       body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Roboto", sans-serif;
+        color: grey; 
+      }
+      table
+      {border-collapse: collapse;
+        border-color: black;
+        border-width: 2px;
+      }
+      th,td
+      {padding: 15px;
+        border: 2px solid white;
+        border-collapse: collapse;
+        color: black;
+      }
+      tr:nth-child(2n+2)
+         {
+          background:  #fafafa;
+          color: black;
+          }
+      th
+      {
+        text-align: center;
+      }
+      
+
+
+          
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        position: relative;
+        opacity: 0.90;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+      .bgimg-1 {
+        background-image: url("startup3.jpg");
+        min-height: 60%;
+      }
+
+      /*.bgimg-2 {
+        background-image: url("Header.jpg");
+        min-height: 400px;
+      }
+
+      .bgimg-3 {
+        background-image: url("startup1.jpg");
+        min-height: 400px;
+      }*/
+
+      .caption1 {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+      }
+
+      .caption span.border {
+        background-color: white;
+        color: white ;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+      }
+      span.border2 {
+        background-color:#0288d1;
+        color: white;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+      }
+
+      h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+      }
+
+
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1024px) {
+          .bgimg-1, .bgimg-2, .bgimg-3 {
+              background-attachment: scroll;
+          }
+      }
+
+
+     
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+/*timeline card*/
+.timeline {
+  position: relative;
+}
+
+.timeline .timeline-event {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.timeline .timeline-event .timeline-content {
+  position: relative;
+  width: calc(50% - 50px);
+}
+
+.timeline .timeline-event::before {
+  display: block;
+  content: "";
+  width: 2px;
+  height: calc(50% - 30px);
+  position: absolute;
+  background: #d2d2d2;
+  left: calc(50% - 1px);
+  top: 0;
+}
+
+.timeline .timeline-event::after {
+  display: block;
+  content: "";
+  width: 2px;
+  height: calc(50% - 30px);
+  position: absolute;
+  background: #d2d2d2;
+  left: calc(50% - 1px);
+  top: calc(50% + 30px);
+}
+
+.timeline .timeline-event:first-child::before {
+  display: none;
+}
+
+.timeline .timeline-event:last-child::after {
+  display: none;
+}
+
+.timeline .timeline-event:nth-child(even) .timeline-content {
+  margin-left: calc(50% + 50px);
+}
+
+.timeline .timeline-event:nth-child(odd) .timeline-content {
+  margin-left: 0;
+}
+
+.timeline .timeline-badge {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #d2d2d2;
+  top: calc(50% - 20px);
+  right: calc(50% - 20px);
+  border-radius: 50%;
+  text-align: center;
+  cursor: default;
+}
+
+.timeline .timeline-badge i {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+@media (max-width: 600px) {
+  .timeline .timeline-event .timeline-content {
+    width: calc(100% - 70px);
+  }
+  .timeline .timeline-event::before {
+    left: 19px;
+  }
+  .timeline .timeline-event::after {
+    left: 19px;
+  }
+  .timeline .timeline-event:nth-child(even) .timeline-content {
+    margin-left: 70px;
+  }
+  .timeline .timeline-event:nth-child(odd) .timeline-content {
+    margin-left: 70px;
+  }
+  .timeline .timeline-badge {
+    left: 0;
+  }
+}
+
+
+    </style>
+
+  </head>
+
+  <body style="font-family: 'Roboto Slab', serif; font-size: 20px;">
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function()
+        {
+          $(".dropdown-button").dropdown();
+        })
+      </script>
+          
+      <!-- Dropdown Structure -->
+                  <script type="text/javascript">
+                      $(document).on('click', 'a[href^="#"]', function (event) {
+                       event.preventDefault();
+
+                        $('html, body').animate({
+                            scrollTop: $($.attr(this, 'href')).offset().top
+                        }, 1000);
+                    });
+        </script>
+
+      
+
+      <!-- NAVBAR-->
+      <div class="navbar-fixed">
+      <nav class="white z-index-1">
+    <div class="nav-wrapper"   >
+      
+      
+      <a href="#" class="brand-logo black-text" style="margin-left: 80px;opacity: 1.0;">Startup Cell</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down black-text"  style="margin-right: 80px;">
+        <li><a href="#Objective" class="hvr-underline-from-center black-text" style="font-size: 20px">About</a></li>
+        <li><a href="#Activities" class="black-text" style="font-size: 20px">Activities</a></li>
+        <li><a href="#vision" class="black-text" style="font-size: 20px">Events</a></li>
+        <li><a href="#vision" class="black-text" style="font-size: 20px">Gallery</a></li>
+      </ul>
+    </div></div>
+  </nav></div>
+    <div class="bgimg-1">
+          <div class="caption1 ">
+            <span class="border2">STARTUP CELL</span>
+          </div>
+      </div>
+
+        <div style="color: #777;background-color:grey-white;text-align:center;padding:50px 80px;text-align: justify;">
+              <div class="row">
+                <div class="col s4">
+            <a name="Objective" id="Objective" >   <h3  style="font-size: 30px; text-align:center;color: #212121;font-family: 'Anton'">OBJECTIVE</h3></a>
+              <p style="text-align:center;color: #424242">To develop a startup culture at NIT Raipur by focusing on the
+            development of incubation center and related activities.
+            </p></div>
+            <div class="col s4">
+            <a name="Mission" id="Mission" >  <h3  style="font-size: 30px; text-align:center;color: #212121;font-family: 'Anton'">MISSION</h3></a>
+              <p style="text-align:center;color: #424242">To produce innovative, entrepreneurial and successful engineers and
+            technologists of high caliber for the nation, to serve as a valuable resource for
+            industry and society.
+            </p></div>
+
+            <div class="col s4">
+            <a name="Vision" id="Vision" >  <h3  style="font-size: 30px; text-align:center;color: #212121;font-family: 'Anton'">VISION</h3></a>
+            <p style="text-align:center;color: #424242">To provide the students and the faculty with opportunities to innovate, create,
+            interpret, and apply the knowledge to create jobs for the nation.
+            </p></div>
+            </div>
+        </div>
+
+<!-- Table DATA PART -->
+<div style="background-color:#0288d1;color: white; width: 100%;height: auto;border:0px;margin:0px; "
+ <ul class = "collapsible popout" data-collapsible = "accordion">
+         <li>
+          <h2 align="left" id="Activities" name="Activities" style="padding-left: 25px" > ACTIVITIES PLANNED</h2>
+            <div class = "collapsible-header " style="background-color:#0288d1; color:white; ">
+
+               <p><i class = "material-icons" >keyboard_arrow_down</i><h5>Click to view the action plan</h5></p></div>
+            <div class = "collapsible-body">
+              <p align="center">Action plan for the four defined objectives</p>
+                <div class="row" style="background-color:#eeeeee ; ">
+                
+                <table  class="responsive-tables" align="center">
+
+                  <tr>
+                    <th bgcolor="#01579b" colspan="3" style="color: white">Activities</th>
+                    <th bgcolor="#01579b" colspan="18" style="color: white">Target Indicators With Time-Line</th>
+                  </tr>
+                  <tr>
+                    <th colspan="3"> </th>
+                    <th colspan="3">First</th>
+                    <th colspan="3">Second</th>
+                    <th colspan="3">Third</th>
+                    <th colspan="3">Fourth</th>
+                    <th colspan="3">Fifth</th>
+                    <th colspan="3">Sixth</th>
+                  </tr>
+                  <tr><th colspan="21" style="background-color:#0288d1 ;color: white; " > Objective 1 (O1)</th></tr>
+                  <tr>
+                    <td rowspan="2" colspan="3">Workshops & certification program <br/>for students (1 batch of50)<br/><b>(O1 a)</b></td>
+                    <td colspan="3">Generating ideas/Innovative design</td>
+                    <td colspan="3">Intellectual property</td>
+                    <td colspan="3">Finance</td>
+                    <td colspan="3">Generating funding</td>
+                    <td colspan="3">Business planning</td>
+                    <td colspan="3">Pitching & Startup India</td>
+                  </tr>
+                  <tr>
+                    
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" colspan="3">Exposure visit of students<br/>to incubation centre (1 batch of 25)<br/><b>(O1 b)</b></td>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3">T Hub</td>
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3">One batch(10 Days)</td>
+                    <td colspan="3"></td>
+                  </tr>
+
+
+                </table>
+                <table class="responsive-tables" align="center">
+                 
+<!-- Objective 2 -->
+                  
+                  <tr><th colspan="21" style="background-color:#0288d1 ;color: white; "> Objective 2 (O2)</th></tr>
+                  <tr>
+                    <td rowspan="2" colspan="3">Workshops & certification program <br/>for students (1 batch of50)<br/><b>(O1 a)</b></td>
+                    <td colspan="3">Generating ideas/Innovative design</td>
+                    <td colspan="3">Intellectual property</td>
+                    <td colspan="3">Finance</td>
+                    <td colspan="3">Generating funding</td>
+                    <td colspan="3">Business planning</td>
+                    <td colspan="3">Pitching & Startup India</td>
+                  </tr>
+                  <tr>
+                    
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" colspan="3">Exposure visit of students<br/>to incubation centre (1 batch of 25)<br/><b>(O1 b)</b></td>
+                    <td colspan="3">Generating ideas/Innovative design</td>
+                    <td colspan="3">Intellectual property</td>
+                    <td colspan="3">Finance</td>
+                    <td colspan="3">Generating funding</td>
+                    <td colspan="3">Business planning</td>
+                    <td colspan="3">Pitching & Startup India</td>
+                  </tr>
+                  <tr>
+                    
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                  </tr>
+
+                                   
+                </table>
+              </div>
+              </p>
+            </div>
+         </li></ul></div>
+
+<!-- GALLERY PART -->
+<div class="Header" align="center" >
+  <h2 class="black-text">GALLERY</h2></div>
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img class="materialboxed"   style="background-image: url(Header.jpg);"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Our Team</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img class="materialboxed"  style="background-image: url(startup2.jpg);"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Workshop 1</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <<img class="materialboxed"  style="background-image: url(startup3.jpg);"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Workshop 2</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div></div>
+
+<!--Flowchart TImeline-->
+ <div class="row" style="background-color: #0288d1; width: 100%"><BR>
+  <h2 class="white-text" align="center">Tips to build a startup step by step</h2>
+ <div class="container">
+    <div class="timeline">
+      <div class="timeline-event">
+        <div class="card timeline-content">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="http://img11.hostingpics.net/pics/681702481.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Step 1<i class="material-icons right">more_vert</i></span>
+            <p>Generating Ideas <a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Step 1<i class="material-icons right">close</i></span>
+            <p>Few tutorials on generating ideas </p>
+          </div>
+        </div>
+        <div class="timeline-badge blue white-text"><i class="material-icons">language</i></div>
+      </div>
+      <div class="timeline-event">
+        <div class="card timeline-content">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="http://img11.hostingpics.net/pics/949190532.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Step 2<i class="material-icons right">more_vert</i></span>
+            <p>Intellectual Property Rights <a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Step 2<i class="material-icons right">close</i></span>
+            <p>Here is some more information about Intellectual Property Rights</p>
+          </div>
+        </div>
+        <div class="timeline-badge red white-text"><i class="material-icons">work</i></div>
+      </div>
+      <div class="timeline-event">
+        <div class="card timeline-content">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="http://img11.hostingpics.net/pics/512562623.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Step 3<i class="material-icons right">more_vert</i></span>
+            <p>Finances related to startup <a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about Finances related to startup</p>
+          </div>
+        </div>
+        <div class="timeline-badge green white-text"><i class="material-icons">person</i></div>
+      </div>
+            <div class="timeline-event">
+        <div class="card timeline-content">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="http://img11.hostingpics.net/pics/512562623.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Step 4<i class="material-icons right">more_vert</i></span>
+            <p>Business Plan <a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about Business Plan</p>
+          </div>
+        </div>
+        <div class="timeline-badge green white-text"><i class="material-icons">person</i></div>
+      </div>
+            <div class="timeline-event">
+        <div class="card timeline-content">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="http://img11.hostingpics.net/pics/512562623.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Step 5<i class="material-icons right">more_vert</i></span>
+            <p>Bootstrapping <a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about bootsrapping </p>
+          </div>
+        </div>
+        <div class="timeline-badge green white-text"><i class="material-icons">person</i></div>
+      </div>
+    </div>
+  </div>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script></div>
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slider();
+    });
+</script>
+  <script type="text/javascript">
+    
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+       
+  </script>
+
+
+<!-- Faculty Description here -->
+<h2 align="center" style="color: black">Contact Us</h2><br>
+      
+  <div class="row">
+    <div class="col s3">
+      <div id="profile-card" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/user-bg.jpg" alt="user bg">
+                    </div>
+                    <div class="card-content">
+                      <img src="images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
+                      <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
+                        <i class="mdi-editor-mode-edit"></i>
+                      </a>
+
+                      <span class="card-title activator grey-text text-darken-4">Roger Waters</span>
+                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
+                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
+                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
+
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Roger Waters <i class="mdi-navigation-close right"></i></span>
+                      <p>Here is some more information about this card.</p>
+                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
+                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
+                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
+                      <p><i class="mdi-social-cake"></i> 18th June 1990
+                        </p></div>
+                  </div>
+    </div>
+
+    <div class="col s3">
+      <div id="profile-card" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="" alt="user bg">
+                    </div>
+                    <div class="card-content">
+                      <img src="" alt="" class="circle responsive-img activator card-profile-image">
+                      <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
+                        <i class="mdi-editor-mode-edit"></i>
+                      </a>
+
+                      <span class="card-title activator grey-text text-darken-4">Roger Waters</span>
+                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
+                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
+                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
+
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Roger Waters <i class="mdi-navigation-close right"></i></span>
+                      <p>Here is some more information about this card.</p>
+                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
+                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
+                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
+                      <p><i class="mdi-social-cake"></i> 18th June 1990
+                        </p><p>
+                          </p><p><i class="mdi-device-airplanemode-on"></i> BAR - AUS
+                            </p><p>
+                    </p></div>
+                  </div>
+    </div>
+    <div class="col s3">
+      <div id="profile-card" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/user-bg.jpg" alt="user bg">
+                    </div>
+                    <div class="card-content">
+                      <img src="images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
+                      <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
+                        <i class="mdi-editor-mode-edit"></i>
+                      </a>
+
+                      <span class="card-title activator grey-text text-darken-4">Roger Waters</span>
+                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
+                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
+                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
+
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Roger Waters <i class="mdi-navigation-close right"></i></span>
+                      <p>Here is some more information about this card.</p>
+                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
+                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
+                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
+                      <p><i class="mdi-social-cake"></i> 18th June 1990
+                        </p><p>
+                          </p><p><i class="mdi-device-airplanemode-on"></i> BAR - AUS
+                            </p><p>
+                    </p></div>
+                  </div>
+    </div>
+    <div class="col s3">
+      <div id="profile-card" class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/user-bg.jpg" alt="user bg">
+                    </div>
+                    <div class="card-content">
+                      <img src="images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
+                      <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
+                        <i class="mdi-editor-mode-edit"></i>
+                      </a>
+
+                      <span class="card-title activator grey-text text-darken-4">Roger Waters</span>
+                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
+                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
+                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
+
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Roger Waters <i class="mdi-navigation-close right"></i></span>
+                      <p>Here is some more information about this card.</p>
+                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
+                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
+                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
+                      <p><i class="mdi-social-cake"></i> 18th June 1990
+                        </p><p>
+                          </p><p><i class="mdi-device-airplanemode-on"></i> BAR - AUS
+                            </p><p>
+                    </p></div>
+                  </div>
+    </div>
+  </div>
+        
+<!-- FOOTER PART -->
+      <footer class="page-footer grey lighten-4">
+          <div class="container">
+            <div class="row">
+              <div class="col  s12">
+                <h5 class="black-text center-align">Startup Cell</h5>
+                <p class="black-text center-align">Powered by <span class="blue-text">Entrepreneurship Cell</span> , NIT Raipur</p>
+                  </div>
+
+              </div></div>
+              
+           <div class="divider"></div>
+              <div class="footer-social-icons center-align" >
+                <h4 class="_14 black-text">Follow us on</h4>
+                <ul class="social-icons" align="center">
+                    <li><a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                </ul>
+              </div>
+
+            
+          <div class="footer-copyright">
+            <div class="container black-text">
+            © 2018 Copyright Text
+<!--             <a class="black-text text-lighten-4 right" href="#!">More Links</a>
+ -->            </div>
+          </div></div>
+        
+        </footer>
+
+  </body>
+  </html>

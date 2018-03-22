@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="logo-final.png">
+	<title></title>
+
+	<script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Compiled and minified CSS -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  	 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+  	<!-- Compiled and minified JavaScript -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
+    <!-- Include Font Awesome Stylesheet in Header -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+
+          <!--mobile optimization-->
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display" rel="stylesheet">
+        <!-- AOS LINKS -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- hover effects css -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+
+  <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,700" rel="styesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Main style -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Responsive -->
+  <link href="css/responsive.css" rel="stylesheet">
+ 
+		
+    <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+    <style >
+		    	/*body {background-color:#555;}*/
+		.navbar-fixed {position: absolute;z-index:999999999;}
+		
+      th,td
+      {padding: 15px;
+      	font-size: 30px;
+        /*border: 2px solid white;
+        border-collapse: collapse;*/
+        color: black;
+      }
+      
+      th
+      {	
+        text-align: center;
+      }
+		      * {
+		  box-sizing: border-box;
+		}
+
+		.item {
+		  width: 200px;
+		  height: 200px;
+		  margin: 50px auto;
+		  padding-top: 75px;
+		  
+		  text-align: center;
+		  
+		  font-size: 3em;
+		}
+
+      .parallax { 
+    /* The image used */
+   /* background-image: url("img_parallax.jpg");*/
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+    /*team*/
+    /* Common Style */
+
+
+/* The fun begins */
+.backText{
+   margin-top:120px;
+  font-size:24px;
+ 
+}
+.circle
+{
+  position:relative;
+  width:300px;
+  height:300px;
+  background:#e9e9e9;
+  /* Create Circle With 50% Rounded */
+
+  /*-webkit-border-radius:50%;
+    border-radius:50%;
+   -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  padding:10px;
+  border:2px dashed #808080;*/
+  
+  /* Assign the perspective to enable 3d Transform */
+    perspective :600px;
+  -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+  
+}
+
+.circle .front img{
+  border-radius:50%;
+   -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.circle .front
+{
+  position:absolute;
+  z-index:9;  
+ 
+  /* Assign The 3D Transform */
+ -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    
+  /* Transition Effect */
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+/* .flipping class for flip effect using jquery */
+
+.circle.flipping .front
+{
+  z-index:9;
+  -webkit-transform:rotateX(180deg);
+  -moz-transform:rotateX(180deg);
+}
+
+
+.circle .back
+{
+  position:absolute;
+  width:300px;
+  height:300px;
+  background:#929292;
+  overflow:hidden;
+  text-align:center;
+  z-index:8;
+  /* Create Circle With 50% Rounded */
+  border-radius:50%;
+  -webkit-border-radius:50%;
+   -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  
+  /* Assign The 3D Transform */
+    -webkit-transform:rotateX(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform:rotateX(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+  
+  /* Transition Effect */
+  transition:all .2s ease-in-out;
+  -webkit-transition:all .2s ease-in-out;
+  -moz-transition:all .2s ease-in-out;
+  -o-transition:all .2s ease-in-out;
+}
+
+.circle.flipping .back
+{
+  z-index:10;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform:rotateX(0deg) rotateY(0deg);
+}
+
+
+
+    </style>
+</head>
+
+
+<body>
+  
+	<!-- Navbar -->
+				<div class="navbar-fixed">
+				  <nav class="transparent z-depth-0">
+				    <div class="nav-wrapper">
+				      <div class="row">
+				        <div class="col s12">
+				         
+				          <a href="https://codepen.io/collection/nbBqgY/" style="padding-left: 40px" class="brand-logo " target="_blank" >Startup Cell</a>
+				          <ul class="right hide-on-med-and-down " style="padding-right: 20px" >
+				            <li ><a href="#about" target="_blank" >About</a></li>
+				            
+				            <li><a href="#events" target="_blank" >Events</a></li>
+                    <li><a href="#activities" target="_blank" >Activities</a></li>
+                    <li><a href="#gallery" target="_blank" >Gallery</a></li>
+                    <li><a href="#team" target="_blank" >Team</a></li>
+				          </ul>
+				        </div>
+				      </div>
+				      
+				    </div>
+				  </nav>
+				</div>
+
+	<!-- Full Page Intro -->
+  <div class="view parallax" style="background-image: url('sky1.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+      <!-- Content -->
+      <div class="text-center white-text mx-5 wow fadeIn" style="font-family: 'Playfair Display' ;font-size:80px ; ">
+        <h1 class="mb-4" >
+          <strong>STARTUP CELL</strong>
+        </h1>
+               <h2>NIT RAIPUR</h2>      
+      </div>
+      <!-- Content -->
+
+    </div>
+    <!-- Mask & flexbox options-->
+
+  </div>
+  <!-- Full Page Intro -->
+
+  <div class="container" id="about">
+    <div class="section">
+
+
+      <!--   Icon Section   -->
+      <div class="row" style="padding-top: 80px;padding-bottom: 80px">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue-text darken-2"><i class="material-icons" style="font-size:60px">settings</i></h2>
+            <h2 class="center" style="font-family: 'Anton';">OBJECTIVE</h2>
+            <br>
+            <p align="center">To develop a startup culture at NIT Raipur by focusing on the development of incubation center and related activities.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+         <h2 class="center blue-text darken-2"><i class="material-icons" style="font-size:60px">people</i></h2>
+            <h2 class="center" style="font-family: 'Anton';">MISSION</h2>
+            <br>
+            <p align="center">To develop a startup culture at NIT Raipur by focusing on the development of incubation center and related activities.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+          <h2 class="center blue-text darken-2"><i class="material-icons" style="font-size:60px">visibility</i></h2>
+            <h2 class="center" style="font-family: 'Anton';">VISION</h2>
+            <br>
+
+            <p align="center">To develop a startup culture at NIT Raipur by focusing on the development of incubation center and related activities.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- <div class="section" style="background: #eceff1 ;padding-bottom:80px;padding-top: 40px"> -->
+<!-- EVENTS -->
+<section style="background-color:#eceff1 ;padding-top: 60px">
+ <div class="container" data-aos="zoom-in" id="events"><br>
+               <div class="divider grey"></div>
+  	<div class="container" style="padding-top: 10px ">
+  		<h1 class="black-text"  align="center" style="font-family: 'Anton'">EVENTS</h1>
+  	</div>
+  	  <div class="divider grey"></div> </div>
+<section id="events" class="section " data-aos="zoom-in" style="background-color:#eceff1 ">
+    <div class="container">
+     
+      <div class="row highlights">
+         <div class="col-md-4">
+          <div class="highlight">
+            <div class="icon-holder" style="background-color:#eceff1 ">
+              <img src="img/Speaker-Session.png" alt="" class="icon" >
+            </div>
+            <h4 class="heading">GENERAL ENTERPRISING TENDANCY TEST</h4>
+            <p class="description">The sessions shall consist of 6 speakers from the industry who have been active in the start-up world and have established successful ventures. The speakers shall have their sessions on </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="highlight">
+            <div class="icon-holder" style="background-color:#eceff1 ">
+              <img src="img/Workshop-1.png" alt="" class="icon" >
+            </div>
+            <h4 class="heading">Workshop on Data Analysis and impacts on the modern world</h4>
+            <p class="description">This workshop shall be conducted to introduce the field of data analysis and data security to the stakeholders.The students shall be given hands on experience with real world data to work on and see how they affect the systems around us.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="highlight">
+            <div class="icon-holder" style="background-color:#eceff1 ">
+              <img src="img/Workshop-2.png" alt="" class="icon" >
+            </div>
+            <h4 class="heading">Workshop on Government policies for Indian start-ups:</h4>
+            <p class="description">The key policy changes introduced by the Government in Start-up India action plan are discussed in this workshop organized by Entrepreneurship Cell, NIT Raipur.</p>
+
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="cut cut-bottom"></div>
+  </section>
+</section>
+
+  
+  <!-- <div class="col s4" data-aos="fade-up">
+  	
+  </div> -->
+<!-- <div class="item" data-aos="fade-down">2</div>
+<div class="item" data-aos="fade-right">3</div>
+<div class="item" data-aos="fade-left">4</div>
+
+<div class="item" data-aos="zoom-in">5</div>
+<div class="item" data-aos="zoom-out">6</div>
+
+<div class="item" data-aos="slide-up">7</div>
+
+<div class="item" data-aos="flip-up">8</div>
+<div class="item" data-aos="flip-down">9</div>
+<div class="item" data-aos="flip-right">10</div>
+<div class="item" data-aos="flip-left">11</div> -->
+
+
+  <div class="container" style="margin-left: : 0;margin-right: : 0; align-content:center;padding-top: 20px; padding-bottom: 40px" id="activities">
+
+  	<p align="center" > 
+  		<div class="icon-block " data-aos="fade-right">
+  	 	<h1 class="center" > <i class="material-icons" style="font-size: 130px">assignment<h2 class="pull-right left-align" style="font-size: 200" ><br/>ACTIVITIES<br/>PLANNED</h2></i></h1></div>
+  	 	</p>
+  	
+     <h3 class="header center-align " data-aos="fade-right"> Defined objectives of Startup Cell, NIT Raipur are:</h3>
+
+    <ul class="collection center-align" style="padding-top: 20; padding-bottom: 40" >
+      <li class="collection-item hoverable" data-aos="fade-left">Developing Critical Mass of Motivated Students & Faculties with
+Entrepreneurial Orientation & Skill</li>
+      <li class="collection-item" data-aos="fade-right">Building Innovation and Early Stage Enterprises by Supporting and Enabling
+Access to Resources & Facilities at Institute</li>
+      <li class="collection-item" data-aos="fade-left">In-house Competency Development to Serve Potential and Early Stage
+Entrepreneurs</li>
+      <li class="collection-item" data-aos="fade-right">Strengthen Intra and Inter – Institutional Linkage and Network with
+Ecosystem Enablers</li>
+    </ul>
+    <center><a class="btn blue " data-aos="fade-up" onclick="myFunction()" ><h6 class="header" id="view">View More</h6></a></center>
+   <!-- <button onclick="myFunction()" id="view">View More</button> -->
+       <script>
+    function myFunction() {
+        var x = document.getElementById("table");
+         var y = document.getElementById("view");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            
+        } else {
+            x.style.display = "none";
+        }
+            if (y.innerHTML === "View More") {
+        y.innerHTML = "View Less";
+    } else {
+        y.innerHTML = "View More";
+    }
+    }
+    </script>
+  </div>
+  	 		<!-- <div class="container" style="margin: 0"> -->
+          <div id="table" class="section" style="display: none" data-aos="fade-down">
+               <table class="table table-striped table-hover centered"  >
+
+                  <tr>
+                    <th bgcolor="#212121" colspan="3" style="color: white"><b>Activities</b></th>
+                    <th bgcolor="#212121" colspan="18" style="color: white"><b>Target Indicators With Time-Line</b></th>
+                  </tr>
+                  <tr>
+                    <th colspan="3"> </th>
+                    <th colspan="3">First</th>
+                    <th colspan="3">Second</th>
+                    <th colspan="3">Third</th>
+                    <th colspan="3">Fourth</th>
+                    <th colspan="3">Fifth</th>
+                    <th colspan="3">Sixth</th>
+                  </tr>
+                  <tr><th colspan="21" style="background-color:#0288d1 ;color: white; " ><b>Objective 1(O1)</b></th></tr>
+                  <tr>
+                    <td rowspan="2" colspan="3">Workshops & certification program <br/>for students (1 batch of50)<br/><b>(O1 a)</b></td>
+                    <td colspan="3">Generating ideas/Innovative design</td>
+                    <td colspan="3">Intellectual property</td>
+                    <td colspan="3">Finance</td>
+                    <td colspan="3">Generating funding</td>
+                    <td colspan="3">Business planning</td>
+                    <td colspan="3">Pitching & Startup India</td>
+                  </tr>
+                  <tr>
+                    
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                    <td colspan="3">One (3 Days)</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="2" colspan="3">Exposure visit of students<br/>to incubation centre (1 batch of 25)<br/><b>(O1 b)</b></td>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3">T Hub</td>
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                    <td colspan="3">One batch(10 Days)</td>
+                    <td colspan="3"></td>
+                  </tr>
+               </table>
+               </div>
+              <!-- </div> -->
+
+  	
+<!-- GALLERY -->
+
+  <div style="padding-bottom: 50px; padding-top: 50px" >
+ <div class="container " data-aos="zoom-in" style="padding-bottom: 50px;" id="gallery"><br>
+               <div class="divider grey"></div>
+    <div class="container" style="padding-top: 10px ">
+      <h1 class="black-text"  align="center" style="font-family: 'Anton'"><i class="material-icons" style="font-size: 30px;padding-right: 10px">collections</i> GALLERY</h1>
+    </div>
+      <div class="divider grey" ></div> </div>
+
+  
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img class="materialboxed"   src="Header.jpg" > <!-- random image -->
+        <div class="caption center-align">
+          <h3 class="white-text">Our Team</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img class="materialboxed"  src="startup2.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Workshop 1</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <<img class="materialboxed"  src="startup3.jpg" style="background-size: cover;"> <!-- random image -->
+        <div class="caption right-align">
+          <h3 class="white-text">Workshop 2</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div></div>
+
+            
+<!-- Team -->
+<section style="background-color: #424242;padding-bottom: 80px;padding-top: 40px" id="team">
+<div class="container "  >
+  
+    <div class="text-center" data-aos="fade-up">
+        <b><h2 class="white-text" style="font-family: 'Anton" >CONTACT US</h2></b>
+        <hr class="white " style="width:20%;"><br><br>
+<h3 class="white-text" data-aos="zoom-in">Director NIT Raipur</h3>
+        <hr class="white " style="width:20%;"><br></div>
+        <div class="circle center" data-aos="fade-left" style="margin:0px auto" >
+    <div class="front">
+      <img width="300" height="300" src="img/Team-00.jpg">
+    </div>
+    <div class="back">
+      <div class="white-text backText">
+         <h3>Dr A M Rawani<br/>Director, NIT Raipur</h3>
+                  <p><a href="http://www.nitrr.ac.in/director.php">View on NITRR Website</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+ <div class="text-center" data-aos="fade-up">
+       
+        
+<h3 class="white-text"  >Faculty Incharge</h3>
+        <hr class="white " style="width:20%;"><br></div>
+        <div class="circle center" data-aos="fade-right" style="margin:0px auto" >
+    <div class="front">
+      <img width="300" height="300" src="img/Team-00.jpg">
+    </div>
+    <div class="back">
+      <div class="white-text backText">
+         <h3>Prof. Saurabh Gupta</h3>
+                  <a href="http://www.nitrr.ac.in/director.php">View on NITRR Website</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+  
+<!-- footer -->
+<footer class="page-footer text-center font-small wow fadeIn">
+
+     <!--/.Call to action-->
+
+
+    <div class="Header center-align">
+    	<h2>Startup Cell, NIT Raipur</h2>
+    </div>
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+        <i class="fa fa-facebook mr-3"></i>
+      </a>
+
+      <a href="https://twitter.com/MDBootstrap" target="_blank">
+        <i class="fa fa-twitter mr-3"></i>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+        <i class="fa fa-youtube mr-3"></i>
+      </a>
+
+      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+        <i class="fa fa-google-plus mr-3"></i>
+      </a>
+
+      <a href="https://dribbble.com/mdbootstrap" target="_blank">
+        <i class="fa fa-dribbble mr-3"></i>
+      </a>
+
+      <a href="https://pinterest.com/mdbootstrap" target="_blank">
+        <i class="fa fa-pinterest mr-3"></i>
+      </a>
+
+      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+        <i class="fa fa-github mr-3"></i>
+      </a>
+
+      <a href="http://codepen.io/mdbootstrap/" target="_blank">
+        <i class="fa fa-codepen mr-3"></i>
+      </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+ <!--  <script src="owl/owl.carousel.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
+  </script>
+
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+    items:1,
+    margin:10,
+    loop:true,
+    autoHeight:true
+});
+  </script>
+  <script type="text/javascript">
+      $('.loop').owlCarousel({
+        center: true,
+        items:2,
+        loop:true,
+        margin:10,
+        responsive:{
+            600:{
+                items:4
+            }
+        }
+    });
+  </script> -->
+
+  <!-- flip script -->
+
+  <script type="text/javascript">
+    
+$(".circle").hover(function(){
+     // if mouse hover then add .flipping class
+    $(this).addClass("flipping");
+  
+},function(){
+    // if mouse unhover then remove the .flipping class
+    $(this).removeClass("flipping");
+});
+  
+  </script>
+   
+          
+      <!-- Dropdown Structure -->
+                  <script type="text/javascript">
+                      $(document).on('click', 'a[href^="#"]', function (event) {
+                       event.preventDefault();
+
+                        $('html, body').animate({
+                            scrollTop: $($.attr(this, 'href')).offset().top
+                        }, 1000);
+                    });
+        </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        // MODAL
+        $('.modal').modal();
+        // DROPDOWNS
+        $(".dropdown-button").dropdown(
+          {
+            belowOrigin: true
+          }
+        );
+        // TABS
+        $('ul.tabs').tabs();
+        // SCROLLSPY
+        $('.scrollspy').scrollSpy();
+        //SIDENAV
+        $(".button-collapse").sideNav();
+      });
+  </script>
+  <script type="text/javascript">
+          AOS.init({
+        duration: 1400,
+      })
+  </script>
+    <script type="text/javascript">
+  //      var elem = document.querySelector('.carousel');
+  // var instance = M.Carousel.init(elem, options);
+
+  // // Or with jQuery
+
+        
+            $( document ).ready(function(){
+
+                $(".button-collapse").sideNav();//mobile screen menu init
+
+                $('.carousel').carousel(); //carousel init
+
+                $('.slider').slider({full_width: true});//slider init
+            });
+
+      
+
+      
+    </script>
+
+</body>
+</html>

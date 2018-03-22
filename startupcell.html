@@ -3,6 +3,9 @@
   <head>
     <link rel="icon" type="image/png" href="logo-final.png">
     <title>Startup Cell</title>
+
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>   
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -15,7 +18,7 @@
       
   
     <!-- Include Font Awesome Stylesheet in Header -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
 
       
 
@@ -23,11 +26,10 @@
     <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
       
         <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
-      
-      <script type = "text/javascript"
-         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+        <!-- AOS LINKS -->
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+       <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+              
        
 
     <style>
@@ -405,19 +407,47 @@ ul.social-icons {
             </p></div>
             </div>
         </div>
+        <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h1 class="center brown-text" style="font-size: 100px"><i class="material-icons">flash_on</i></h1>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 <!-- Table DATA PART -->
-<div style="background-color:#0288d1;color: white; width: 100%;height: auto;border:0px;margin:0px; "
- <ul class = "collapsible popout" data-collapsible = "accordion">
-         <li>
-          <h2 align="left" id="Activities" name="Activities" style="padding-left: 25px" > ACTIVITIES PLANNED</h2>
-            <div class = "collapsible-header " style="background-color:#0288d1; color:white; ">
 
-               <p><i class = "material-icons" >keyboard_arrow_down</i><h5>Click to view the action plan</h5></p></div>
-            <div class = "collapsible-body">
-              <p align="center">Action plan for the four defined objectives</p>
-                <div class="row" style="background-color:#eeeeee ; ">
-                
+            
+               <div class="center-align" >
+           
                 <table  class="responsive-tables" align="center">
 
                   <tr>
@@ -471,175 +501,13 @@ ul.social-icons {
                     <td colspan="3">One batch(10 Days)</td>
                     <td colspan="3"></td>
                   </tr>
+               </table>
+                </div>
+                
+            
+            
 
 
-                </table>
-                <table class="responsive-tables" align="center">
-                 
-<!-- Objective 2 -->
-                  
-                  <tr><th colspan="21" style="background-color:#0288d1 ;color: white; "> Objective 2 (O2)</th></tr>
-                  <tr>
-                    <td rowspan="2" colspan="3">Workshops & certification program <br/>for students (1 batch of50)<br/><b>(O1 a)</b></td>
-                    <td colspan="3">Generating ideas/Innovative design</td>
-                    <td colspan="3">Intellectual property</td>
-                    <td colspan="3">Finance</td>
-                    <td colspan="3">Generating funding</td>
-                    <td colspan="3">Business planning</td>
-                    <td colspan="3">Pitching & Startup India</td>
-                  </tr>
-                  <tr>
-                    
-                    <td colspan="3">One (3 Days)</td>
-                    <td colspan="3">One (3 Days)</td>
-                    <td colspan="3">One (3 Days)</td>
-                    <td colspan="3">One (3 Days)</td>
-                    <td colspan="3">One (3 Days)</td>
-                    <td colspan="3">One (3 Days)</td>
-                  </tr>
-
-                  <tr>
-                    <td rowspan="2" colspan="3">Exposure visit of students<br/>to incubation centre (1 batch of 25)<br/><b>(O1 b)</b></td>
-                    <td colspan="3">Generating ideas/Innovative design</td>
-                    <td colspan="3">Intellectual property</td>
-                    <td colspan="3">Finance</td>
-                    <td colspan="3">Generating funding</td>
-                    <td colspan="3">Business planning</td>
-                    <td colspan="3">Pitching & Startup India</td>
-                  </tr>
-                  <tr>
-                    
-                    <td colspan="3">One (3 Days)</td>
-                    <td colspan="3">One (3 Days)</td>
-                    <td colspan="3">One (3 Days)</td>
-                    <td colspan="3">One (3 Days)</td>
-                    <td colspan="3">One (3 Days)</td>
-                    <td colspan="3">One (3 Days)</td>
-                  </tr>
-
-                                   
-                </table>
-              </div>
-              </p>
-            </div>
-         </li></ul></div>
-
-<!-- GALLERY PART -->
-<div class="Header" align="center" >
-  <h2 class="black-text" id="Gallery">GALLERY</h2></div>
-  <div class="slider">
-    <ul class="slides">
-      <li>
-        <img class="materialboxed"   src="Header.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3 class="white-text">Our Team</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img class="materialboxed"  src="startup2.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Workshop 1</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <<img class="materialboxed"  src="startup3.jpg" style="background-size: cover;"> <!-- random image -->
-        <div class="caption right-align">
-          <h3 class="white-text">Workshop 2</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div></div>
-
-<!--Flowchart TImeline-->
- <div class="row" style="background-color: #0288d1; width: 100%"><BR>
-  <h2 class="white-text" align="center">Tips to build a startup step by step</h2>
- <div class="container">
-    <div class="timeline">
-      <div class="timeline-event">
-        <div class="card timeline-content">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="http://img11.hostingpics.net/pics/681702481.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Step 1<i class="material-icons right">more_vert</i></span>
-            <p>Generating Ideas <a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Step 1<i class="material-icons right">close</i></span>
-            <p>Few tutorials on generating ideas </p>
-          </div>
-        </div>
-        <div class="timeline-badge blue white-text"><i class="material-icons">language</i></div>
-      </div>
-      <div class="timeline-event">
-        <div class="card timeline-content">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="http://img11.hostingpics.net/pics/949190532.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Step 2<i class="material-icons right">more_vert</i></span>
-            <p>Intellectual Property Rights <a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Step 2<i class="material-icons right">close</i></span>
-            <p>Here is some more information about Intellectual Property Rights</p>
-          </div>
-        </div>
-        <div class="timeline-badge red white-text"><i class="material-icons">work</i></div>
-      </div>
-      <div class="timeline-event">
-        <div class="card timeline-content">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="http://img11.hostingpics.net/pics/512562623.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Step 3<i class="material-icons right">more_vert</i></span>
-            <p>Finances related to startup <a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about Finances related to startup</p>
-          </div>
-        </div>
-        <div class="timeline-badge green white-text"><i class="material-icons">person</i></div>
-      </div>
-            <div class="timeline-event">
-        <div class="card timeline-content">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="http://img11.hostingpics.net/pics/512562623.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Step 4<i class="material-icons right">more_vert</i></span>
-            <p>Business Plan <a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about Business Plan</p>
-          </div>
-        </div>
-        <div class="timeline-badge green white-text"><i class="material-icons">person</i></div>
-      </div>
-            <div class="timeline-event">
-        <div class="card timeline-content">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="http://img11.hostingpics.net/pics/512562623.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Step 5<i class="material-icons right">more_vert</i></span>
-            <p>Bootstrapping <a href="#">This is a link</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-            <p>Here is some more information about bootsrapping </p>
-          </div>
-        </div>
-        <div class="timeline-badge green white-text"><i class="material-icons">person</i></div>
-      </div>
-    </div>
-  </div>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
@@ -662,129 +530,7 @@ ul.social-icons {
   </script>
 
 
-<!-- Faculty Description here -->
-<h2 align="center" style="color: black">Contact Us</h2><br>
-      
-  <div class="row">
-    <div class="col s3">
-      <div id="profile-card" class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="images/user-bg.jpg" alt="user bg">
-                    </div>
-                    <div class="card-content">
-                      <img src="images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
-                      <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
-                        <i class="mdi-editor-mode-edit"></i>
-                      </a>
 
-                      <span class="card-title activator grey-text text-darken-4">Roger Waters</span>
-                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
-                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
-                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
-
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Roger Waters <i class="mdi-navigation-close right"></i></span>
-                      <p>Here is some more information about this card.</p>
-                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
-                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
-                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
-                      <p><i class="mdi-social-cake"></i> 18th June 1990
-                        </p></div>
-                  </div>
-    </div>
-
-    <div class="col s3">
-      <div id="profile-card" class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="" alt="user bg">
-                    </div>
-                    <div class="card-content">
-                      <img src="" alt="" class="circle responsive-img activator card-profile-image">
-                      <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
-                        <i class="mdi-editor-mode-edit"></i>
-                      </a>
-
-                      <span class="card-title activator grey-text text-darken-4">Roger Waters</span>
-                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
-                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
-                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
-
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Roger Waters <i class="mdi-navigation-close right"></i></span>
-                      <p>Here is some more information about this card.</p>
-                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
-                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
-                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
-                      <p><i class="mdi-social-cake"></i> 18th June 1990
-                        </p><p>
-                          </p><p><i class="mdi-device-airplanemode-on"></i> BAR - AUS
-                            </p><p>
-                    </p></div>
-                  </div>
-    </div>
-    <div class="col s3">
-      <div id="profile-card" class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="images/user-bg.jpg" alt="user bg">
-                    </div>
-                    <div class="card-content">
-                      <img src="images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
-                      <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
-                        <i class="mdi-editor-mode-edit"></i>
-                      </a>
-
-                      <span class="card-title activator grey-text text-darken-4">Roger Waters</span>
-                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
-                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
-                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
-
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Roger Waters <i class="mdi-navigation-close right"></i></span>
-                      <p>Here is some more information about this card.</p>
-                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
-                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
-                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
-                      <p><i class="mdi-social-cake"></i> 18th June 1990
-                        </p><p>
-                          </p><p><i class="mdi-device-airplanemode-on"></i> BAR - AUS
-                            </p><p>
-                    </p></div>
-                  </div>
-    </div>
-    <div class="col s3">
-      <div id="profile-card" class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="images/user-bg.jpg" alt="user bg">
-                    </div>
-                    <div class="card-content">
-                      <img src="images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
-                      <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
-                        <i class="mdi-editor-mode-edit"></i>
-                      </a>
-
-                      <span class="card-title activator grey-text text-darken-4">Roger Waters</span>
-                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
-                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
-                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
-
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Roger Waters <i class="mdi-navigation-close right"></i></span>
-                      <p>Here is some more information about this card.</p>
-                      <p><i class="mdi-action-perm-identity"></i> Project Manager</p>
-                      <p><i class="mdi-action-perm-phone-msg"></i> +1 (612) 222 8989</p>
-                      <p><i class="mdi-communication-email"></i> yourmail@domain.com</p>
-                      <p><i class="mdi-social-cake"></i> 18th June 1990
-                        </p><p>
-                          </p><p><i class="mdi-device-airplanemode-on"></i> BAR - AUS
-                            </p><p>
-                    </p></div>
-                  </div>
-    </div>
-  </div>
         
 <!-- FOOTER PART -->
       <footer class="page-footer grey lighten-4">
